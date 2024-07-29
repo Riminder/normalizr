@@ -29,6 +29,7 @@
   "typings": "index.d.ts",
   "sideEffects": false,
   "scripts": {
+    "prepare": "npm run clean && run-p build:*",
     "build": "npm run clean && run-p build:*",
     "build:development": "NODE_ENV=development rollup -c",
     "build:production": "NODE_ENV=production rollup -c",
